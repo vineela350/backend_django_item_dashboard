@@ -141,6 +141,13 @@ REST_FRAMEWORK = {
     # Other settings...
 }
 
+CORS_ORIGIN_WHITELIST = [
+    "https://damp-coast-09342-7c3e0242d698.herokuapp.com/",
+    "http://damp-coast-09342-7c3e0242d698.herokuapp.com/",
+     "https://damp-coast-09342-7c3e0242d698.herokuapp.com",
+    "http://damp-coast-09342-7c3e0242d698.herokuapp.com",
+
+]
 
 import dj_database_url
 prod__db=dj_database_url.config(conn_max_age=500)
